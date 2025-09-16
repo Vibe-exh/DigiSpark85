@@ -1,0 +1,14 @@
+How This Fileless Attack Works:
+1. Gain Admin Access: It opens the Command Prompt as Administrator using CTRL+SHIFT+ENTER. This is the critical step that requires the user to be logged in with an    admin account.
+
+2. UAC Bypass: It automatically accepts the UAC (User Account Control) prompt by sending ALT+Y.
+
+3. WMIC Magic: It uses a for loop with the wmic command to:
+
+	--->Find: Query Windows for all keyboards and get their Plug and Play (PnP) device ID.
+
+	--->Disable: For each keyboard found, it tells Windows to disable the device using that specific ID.
+
+4. Clean Exit: It closes the Command Prompt window, leaving the user with no obvious application open, just a non-functional keyboard.
+
+5. Key Advantage: The entire process uses only cmd.exe and wmic.exe, which are trusted, built-in system files. No downloads, no files dropped to disk. This is    incredibly stealthy.
