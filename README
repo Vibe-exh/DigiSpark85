@@ -1,0 +1,49 @@
+<div align="center">
+
+# DigiSpark85  
+### A collection of Digispark (ATtiny85) automation scripts, experiments & notes by **Vibe-exh**
+
+<img src="https://img.shields.io/badge/Platform-Digispark%20ATtiny85-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Language-Arduino%20C++-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge">
+<img src="https://img.shields.io/badge/Maintainer-Vibe--exh-orange?style=for-the-badge">
+
+</div>
+
+---
+
+## Overview
+
+**DigiSpark85** is a curated collection of Digispark (ATtiny85) sketches and notes.  
+It showcases USB HID automation, template modules, small-scale microcontroller experiments, and fun examples like Rickroll payloads.
+
+Whether you're exploring Digispark basics or building quick USB automation prototypes, this repo provides ready-made references and starter templates.
+
+---
+
+## Repository Structure
+
+| Folder / File | Description |
+|--------------|-------------|
+| **Keyboard_Disabler/** | Demonstrates USB keyboard-emulation behavior. Useful for experimenting with HID scripting, keystroke automation and device interaction testing. |
+| **Persistance Notes by Vibes/** | Contains personal notes related to persistence behavior, device state, and Digispark boot cycles. |
+| **Rickroll/** | A fun micro-payload example that automates opening a Rickroll link or similar action. Great to learn USB keystroke sequences. |
+| **Template_Wifi/** | Starting template for using Digispark alongside external Wi-Fi modules. Includes boilerplate code and setup references. |
+| **Notes by Vibe.exh.txt** | Additional notes, references, and thoughts related to these projects. |
+
+---
+
+## Requirements
+
+- **Digispark (ATtiny85)** board  
+- **Arduino IDE**  
+- Digispark board support installed  
+- USB Type-A port (or adapter)
+
+---
+
+## Arduino IDE Setup
+
+1. Open **File → Preferences**
+2. Add this URL under *Additional Boards Manager URLs*:
+
